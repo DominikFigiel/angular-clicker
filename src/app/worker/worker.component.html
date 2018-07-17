@@ -1,0 +1,17 @@
+<div class="worker-item">
+  <div class="worker-info">
+    <img src="" />
+    <div class="worker-level">
+      <span>{{worker.level}}</span>
+    </div>
+  </div>
+  <div class="worker-production">
+    <div class="worker-production-progress">
+      <mat-progress-bar mode="determinate" value="{{worker.progress}}"></mat-progress-bar>
+    </div>
+    <div class="worker-production-upgrade"><button (click)="worker.levelUp(player)">Ulepsz: {{worker.upgradeCost}}</button></div>
+    <div class="worker-production-start"><button (click)="worker.start()" *ngIf="!worker.isRunning && !worker.autoRunning">Start</button></div>
+    <div class="worker-production-start"><button (click)="worker.setAuto()" *ngIf="!worker.autoRunning">Auto</button></div>
+    <div class="worker-production-time"></div>
+  </div>
+</div>

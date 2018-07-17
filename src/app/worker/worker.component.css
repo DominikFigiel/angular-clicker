@@ -1,0 +1,14 @@
+.worker-item {
+  display: inline-block;
+  width: 40%;
+}
+
+.worker-info {
+  display: inline-block;
+  width: 30%;
+}
+
+.worker-production {
+  display: inline-block;
+  width: 60%;
+}
